@@ -1,0 +1,51 @@
+    //SCSS
+    $t-color: #000000;
+    $font-bold: "Lato-Bold";
+    $font-light: "Lato-Light";
+    $p:100px;
+    //CSS
+    .counter_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: $p*0.9 $p*0.7;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            padding: $p*0.5 $p*0.4;
+            flex-direction: column;
+            align-content: center;
+            width: 100%;
+        }
+        .counter_item {
+            text-align: center;
+            .counter-number {
+                font-family: $font-bold;
+                font-size: 2.25em;
+                font-weight: bold;
+                line-height: 0.83;
+                letter-spacing: 1.8px;
+                color: $t-color;
+                opacity: 0;
+                @media screen and (max-width: 768px) {
+                    padding: $p*0.1 0;
+                }
+            }
+            .number-visible {
+                opacity: 1;
+                transition: 2s;
+            }
+            .counter-text {
+                font-family: $font-light;
+                font-size: 1em;
+                opacity: 0.8;
+                padding-top: 20px;
+                font-weight: 300;
+                line-height: 1.13;
+                letter-spacing: 0.8px;
+                color: $t-color;
+                @media screen and (max-width: 568px) {
+                    padding-top: 5px;
+                }
+            }
+        }
+    }

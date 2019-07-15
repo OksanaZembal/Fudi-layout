@@ -1,0 +1,96 @@
+//SCSS
+$bg-color:#f7f7f7;
+$line:#f57365;
+$t-color: #000000;
+$font-bold: "Lato-Bold";
+$font-regular: "Lato-Regular";
+$font-light: "Lato-Light";
+$img-shadow:-22.3px 11.3px 3.8px 0.2px rgba(90, 90, 90, 0.07);
+$p:100px;
+//CSS
+.introduce_wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-color;
+    padding: $p $p 0 $p*0.8;
+    @media screen and (max-width: 961px) {
+        padding: $p*0.8 $p*0.8 0 $p*0.8;
+    }
+    @media screen and (max-width: 768px) {
+        padding: $p*0.6 $p*0.4 0 $p*0.4;
+    }
+    @media screen and (max-width: 568px) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: $p*0.2;
+        margin: auto;
+    }
+    .introduce-img {
+        display: flex;
+        align-items: flex-end;
+        @media screen and (max-width: 568px) {
+            padding-top: $p*0.2;
+        }
+        img[title="i-phone"] {
+            width: 100%;
+            min-width: 252px;
+        }
+    }
+    .introduce_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $p*0.8 0 0 $p*0.2;
+        max-width: 1000px;
+        @media screen and (max-width: 1025px) {
+            padding: $p*0.6 0 0 $p*0.2;
+        }
+        @media screen and (max-width: 961px) {
+            padding: $p*0.4 0 0 $p*0.1;
+        }
+        @media screen and (max-width: 768px) {
+            padding: $p*0.2 0 0 $p*0.05;
+            text-align: center;
+        }
+        @media screen and (max-width: 568px) {
+            padding: $p*0.1 0 0 0;
+            margin: auto;
+            text-align: center;
+        }
+        .introduce_content-title {
+            font-family: $font-bold;
+            font-size: 1.1em;
+            font-weight: bold;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+            @media screen and (max-width: 768px) {
+                font-size: 0.9em;
+            }
+        }
+        .introduce_content-line {
+            width: 88px;
+            height: 1px;
+            background-color: $line;
+            @media screen and (max-width: 768px) {
+                margin: auto;
+            }
+            @media screen and (max-width: 568px) {
+                margin: auto;
+            }
+        }
+        .introduce_content-text {
+            font-family: $font-light;
+            font-size: 1em;
+            font-weight: 300;
+            letter-spacing: 0.8px;
+            color: $t-color;
+            @media screen and (max-width: 768px) {
+                font-size: 0.8em;
+            }
+        }
+        .app-items {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+    //SCSS
+    $t-color: white;
+    $font-bold: "Lato-Bold";
+    $font-light: "Lato-Light";
+    $line:#f57365;
+    $p:100px;
+    //CSS
+    .cart__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: $p*0.8;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            justify-content: space-between;
+            padding: $p*0.8 $p*0.4;
+        }
+        @media screen and (max-width: 568px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: $p*0.4 0;
+        }
+        .cart__item {
+            max-width: 320px;
+            text-align: center;
+            margin: auto 25px;
+            @media screen and (max-width: 768px) {
+                margin: auto 10px;
+            }
+            .cart__item-title {
+                text-transform: uppercase;
+                margin: 8px auto;
+                font-family: $font-bold;
+                font-size: 1.1em;
+                font-weight: bolder;
+                letter-spacing: 0.9px;
+                line-height: 1.67;
+            }
+            .cart__item-line {
+                width: 88px;
+                height: 1px;
+                background-color: $line;
+                margin: auto;
+            }
+            .cart__item-content {
+                font-family: $font-light;
+                font-size: 1em;
+                font-weight: 300;
+                letter-spacing: 0.8px;
+            }
+        }
+    }

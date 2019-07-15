@@ -1,0 +1,103 @@
+    //SCSS
+    $t-color: white;
+    $bg-color:#4a3949;
+    $font-hairline: "Lato-Hairline";
+    $font-hlItalic: "Lato-HairlineItalic";
+    $line:#f57365;
+    //CSS
+    .carousel {
+        background-color: $bg-color;
+        .carousel-indicators {
+            bottom: 5%;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 0;
+                bottom: 0;
+            }
+            @media screen and (max-width: 568px) {
+                margin-bottom: 0;
+                bottom: 0;
+            }
+            li {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+            }
+        }
+        .carousel-inner {
+            .carousel-item img {
+                width: 100%;
+                height: 100%;
+            }
+            .carousel-caption {
+                display: block;
+                right: 25%;
+                left: 25%;
+                bottom: 20%;
+                @media screen and (max-width: 961px) {
+                    bottom: 10%;
+                    right: 15%;
+                    left: 15%;
+                }
+                @media screen and (max-width: 768px) {
+                    bottom: 10%;
+                    right: 15%;
+                    left: 15%;
+                }
+                @media screen and (max-width: 568px) {
+                    bottom: 20%;
+                    margin: 0 auto;
+                    margin-bottom: 0;
+                    padding: 0;
+                    right: 0;
+                    left: 0;
+                }
+                .carousel-avatar {
+                    max-width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                    @media screen and (max-width: 768px) {
+                        margin: 0 auto;
+                    }
+                    @media screen and (max-width: 568px) {
+                        max-width: 50px;
+                        height: 50px;
+                        padding: 0px;
+                        margin-bottom: 0;
+                    }
+                }
+                .carousel-text {
+                    font-family: $font-hairline;
+                    font-size: 1.9em;
+                    font-weight: 100;
+                    text-align: center;
+                    color: $t-color;
+                    @media screen and (max-width: 961px) {
+                        font-size: 1.4em;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.1em;
+                    }
+                    @media screen and (max-width: 568px) {
+                        font-size: 0.7em;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                span {
+                    display: block;
+                    margin: auto;
+                    font-family: $font-hlItalic;
+                    font-size: 1em;
+                    font-style: italic;
+                    @media screen and (max-width: 768px) {
+                        font-size: 0.8em;
+                    }
+                    @media screen and (max-width: 568px) {
+                        font-size: 0.3m;
+                        bottom: 5%;
+                    }
+                }
+            }
+        }
+    }

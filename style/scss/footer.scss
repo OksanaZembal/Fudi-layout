@@ -1,0 +1,95 @@
+ //SCSS
+ $t-color: #ffffff;
+ $bg-color:#4a3949;
+ $font-bold: "Lato-Bold";
+ $font-light: "Lato-Light";
+ $p:100px;
+ //CSS
+ .footer_wrap {
+     color: $t-color;
+     margin-top: $p*0.5;
+     background-color: $bg-color;
+     padding: $p*0.5 $p*0.8;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     @media screen and (max-width: 768px) {
+         padding: $p*0.3 $p*0.4;
+     }
+     @media screen and (max-width: 568px) {
+         padding: $p*0.2 0;
+     }
+     .footer_content {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: center;
+         @media screen and (max-width: 768px) {
+             justify-content: space-between;
+             flex-direction: column;
+         }
+         @media screen and (max-width: 568px) {}
+         .content_design {
+             display: flex;
+             flex-direction: column;
+             @media screen and (max-width: 768px) {
+                 flex-direction: row;
+                 justify-content: space-between;
+                 min-width: 500px;
+             }
+             @media screen and (max-width: 568px) {
+                 min-width: 100px;
+                 flex-direction: column;
+                 text-align: center;
+             }
+         }
+         .content_contact {
+             display: flex;
+             flex-direction: column;
+             @media screen and (max-width: 768px) {
+                 flex-direction: row;
+                 justify-content: space-between;
+                 min-width: 500px;
+                 padding-right: $p*0.5;
+             }
+             @media screen and (max-width: 568px) {
+                 min-width: 100px;
+                 flex-direction: column;
+                 text-align: center;
+                 padding-right: 0;
+             }
+             .content_contact-mail {
+                 color: $t-color;
+             }
+             .content_contact-number {
+                 color: $t-color;
+             }
+         }
+         .footer_menu-wrap {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             .footer_menu-content {
+                 list-style: none;
+                 @media screen and (max-width: 568px) {
+                     padding-left: $p*0.1;
+                 }
+                 a {
+                     color: $t-color;
+                 }
+                 a:hover {
+                     text-decoration: underline;
+                     opacity: 0.7;
+                 }
+             }
+         }
+     }
+     .footer_nav {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         padding-top: $p*0.3;
+         margin: auto;
+         min-width: 250px;
+     }
+ }

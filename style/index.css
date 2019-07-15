@@ -1,0 +1,13 @@
+@import "css/fonts.css";
+@import "css/header.css";
+@import "css/carts-block.css";
+@import"css/introduce-block.css";
+@import "css/review-block.css";
+@import "css/menu.css";
+@import "css/footer.css";
+@import "css/counter.css";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

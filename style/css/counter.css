@@ -1,0 +1,53 @@
+.counter_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 90px 70px;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .counter_wrap {
+    padding: 50px 40px;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}
+.counter_wrap .counter_item {
+  text-align: center;
+}
+.counter_wrap .counter_item .counter-number {
+  font-family: "Lato-Bold";
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 0.83;
+  letter-spacing: 1.8px;
+  color: #000000;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .counter_wrap .counter_item .counter-number {
+    padding: 10px 0;
+  }
+}
+.counter_wrap .counter_item .number-visible {
+  opacity: 1;
+  transition: 2s;
+}
+.counter_wrap .counter_item .counter-text {
+  font-family: "Lato-Light";
+  font-size: 1em;
+  opacity: 0.8;
+  padding-top: 20px;
+  font-weight: 300;
+  line-height: 1.13;
+  letter-spacing: 0.8px;
+  color: #000000;
+}
+@media screen and (max-width: 568px) {
+  .counter_wrap .counter_item .counter-text {
+    padding-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=counter.css.map */

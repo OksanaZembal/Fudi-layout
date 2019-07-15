@@ -1,0 +1,120 @@
+.carousel {
+  background-color: #4a3949;
+}
+.carousel .carousel-indicators {
+  bottom: 5%;
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 568px) {
+  .carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+  }
+}
+.carousel .carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-caption {
+  display: block;
+  right: 25%;
+  left: 25%;
+  bottom: 20%;
+}
+@media screen and (max-width: 961px) {
+  .carousel .carousel-inner .carousel-caption {
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-caption {
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .carousel .carousel-inner .carousel-caption {
+    bottom: 20%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0;
+    right: 0;
+    left: 0;
+  }
+}
+.carousel .carousel-inner .carousel-caption .carousel-avatar {
+  max-width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-caption .carousel-avatar {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 568px) {
+  .carousel .carousel-inner .carousel-caption .carousel-avatar {
+    max-width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin-bottom: 0;
+  }
+}
+.carousel .carousel-inner .carousel-caption .carousel-text {
+  font-family: "Lato-Hairline";
+  font-size: 1.9em;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 961px) {
+  .carousel .carousel-inner .carousel-caption .carousel-text {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-caption .carousel-text {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 568px) {
+  .carousel .carousel-inner .carousel-caption .carousel-text {
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0;
+  }
+}
+.carousel .carousel-inner .carousel-caption span {
+  display: block;
+  margin: auto;
+  font-family: "Lato-HairlineItalic";
+  font-size: 1em;
+  font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-caption span {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 568px) {
+  .carousel .carousel-inner .carousel-caption span {
+    font-size: 0.3m;
+    bottom: 5%;
+  }
+}
+
+/*# sourceMappingURL=review-block.css.map */

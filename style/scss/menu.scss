@@ -1,0 +1,137 @@
+    $bg-color:#f7f7f7;
+    $t-white:#ffffff;
+    $line:#f57365;
+    $t-color: #000000;
+    $font-bold: "Lato-Bold";
+    $font-regular: "Lato-Regular";
+    $font-light: "Lato-Light";
+    $timesRom: 'Times New Roman';
+    $t-recipe:rgba(255, 255, 255, 0.9);
+    $shadow:-0.9px 0.5px 40px rgba(1, 1, 1, 0.55);
+    //CSS
+    .menu_wrap {
+        padding-top: 40px;
+        .menu_title {
+            font-family: $font-bold;
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: 1.67;
+            letter-spacing: 0.9px;
+            color: $t-color;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        .menu_line {
+            background-color: $line;
+            width: 88px;
+            height: 1px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        .container_wrap {
+            display: flex;
+            flex-wrap: wrap;
+            .menu-item {
+                width: 20%;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 230px;
+                @media screen and (max-width: 1620px) {
+                    height: 210px;
+                    width: 20%;
+                }
+                @media screen and (max-width: 1440px) {
+                    height: 175px;
+                    width: 20%;
+                }
+                @media screen and (max-width: 1200px) {
+                    height: 185px;
+                    width: 25%;
+                }
+                @media screen and (max-width: 1025px) {
+                    height: 220px;
+                    width: 33.333%;
+                }
+                @media screen and (max-width: 961px) {
+                    height: 250px;
+                    width: 50%;
+                }
+                @media screen and (max-width: 768px) {
+                    height: 230px;
+                    width: 50%;
+                }
+                @media screen and (max-width: 640px) {
+                    height: 205px;
+                    width: 50%;
+                }
+                @media screen and (max-width: 568px) {
+                    height: 310px;
+                    width: 100%;
+                }
+                @media screen and (max-width: 480px) {
+                    height: 250px;
+                    width: 100%;
+                }
+                @media screen and (max-width: 360px) {
+                    height: 220px;
+                    width: 100%;
+                }
+                @media screen and (max-width: 320px) {
+                    height: 210px;
+                    width: 100%;
+                }
+                img {
+                    max-width: 100%;
+                    margin: auto;
+                    height: auto;
+                    width: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    max-width: none;
+                    max-height: none;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    top: 0;
+                }
+                .context-text {
+                    position: absolute;
+                    bottom: 30%;
+                    text-align: center;
+                    margin: auto;
+                    opacity: 0.9;
+                    text-shadow: $shadow;
+                    font-family: $timesRom;
+                    font-size: 0.9em;
+                    font-weight: bold;
+                    font-style: italic;
+                    letter-spacing: 0.8px;
+                    color: $t-recipe;
+                    @media screen and (max-width: 568px) {
+                        bottom: 50%;
+                    }
+                    @media screen and (max-width: 320px) {
+                        bottom: 35%;
+                    }
+                    span {
+                        display: block;
+                        padding-top: 10px;
+                        text-transform: uppercase;
+                        font-style: normal;
+                        line-height: 0.84;
+                        font-family: $font-bold;
+                        font-size: 2em;
+                        font-weight: bold;
+                        letter-spacing: 1.8px;
+                        color: $t-white;
+                    }
+                }
+            }
+        }
+    }

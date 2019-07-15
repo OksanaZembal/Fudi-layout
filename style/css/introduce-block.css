@@ -1,0 +1,112 @@
+.introduce_wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding: 100px 100px 0 80px;
+}
+@media screen and (max-width: 961px) {
+  .introduce_wrap {
+    padding: 80px 80px 0 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introduce_wrap {
+    padding: 60px 40px 0 40px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .introduce_wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    margin: auto;
+  }
+}
+.introduce_wrap .introduce-img {
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (max-width: 568px) {
+  .introduce_wrap .introduce-img {
+    padding-top: 20px;
+  }
+}
+.introduce_wrap .introduce-img img[title=i-phone] {
+  width: 100%;
+  min-width: 252px;
+}
+.introduce_wrap .introduce_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0 0 20px;
+  max-width: 1000px;
+}
+@media screen and (max-width: 1025px) {
+  .introduce_wrap .introduce_content {
+    padding: 60px 0 0 20px;
+  }
+}
+@media screen and (max-width: 961px) {
+  .introduce_wrap .introduce_content {
+    padding: 40px 0 0 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introduce_wrap .introduce_content {
+    padding: 20px 0 0 5px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 568px) {
+  .introduce_wrap .introduce_content {
+    padding: 10px 0 0 0;
+    margin: auto;
+    text-align: center;
+  }
+}
+.introduce_wrap .introduce_content .introduce_content-title {
+  font-family: "Lato-Bold";
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .introduce_wrap .introduce_content .introduce_content-title {
+    font-size: 0.9em;
+  }
+}
+.introduce_wrap .introduce_content .introduce_content-line {
+  width: 88px;
+  height: 1px;
+  background-color: #f57365;
+}
+@media screen and (max-width: 768px) {
+  .introduce_wrap .introduce_content .introduce_content-line {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 568px) {
+  .introduce_wrap .introduce_content .introduce_content-line {
+    margin: auto;
+  }
+}
+.introduce_wrap .introduce_content .introduce_content-text {
+  font-family: "Lato-Light";
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .introduce_wrap .introduce_content .introduce_content-text {
+    font-size: 0.8em;
+  }
+}
+.introduce_wrap .introduce_content .app-items {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=introduce-block.css.map */
